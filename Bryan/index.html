@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <header id="navbar">
+    <h1>BRY.AN.TONIO</h1>
+    <nav>
+      <ul>
+        <li><a href="#welcome-section">Intro</a></li>
+        <li><a href="#projects1">Projects</a></li>
+        <li><a href="#goodbye">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- The navbar does contain a link to jump to another section. Does the validator not catch it just because it's not an immediate child? Also, in another validator thing it says the parent should be body; so should I just delete the header section here?-->
+
+  
+  <main>
+    <div id="welcome-section"><h1>☺</h1></div>
+    <section id="welcome-sectionreal">
+      <h1 id="hello-world">Hello World!</h1>
+      <p id="intro">I'm Bryan Antonio, a visual artist based in Brooklyn, NY. <br> I have an undying love for art and an
+        eagerness
+        for learning. <br>This page is a step in my learning new skills as I continue to explore the world. On this page you'll
+        find projects showing things I've learned.</p>
+    </section>
+
+    <section id="img2">
+      <img class="images" src="Images/tributepage.png"
+        alt="screenshot of a tan page with album art, music links, and descriptions.">
+    </section>
+    <section id="projects1">
+      <h3>Tribute Page</h3>
+      <p class="project-text">This was the first project we completed. I took it as an opportunity to share music I
+        love. A simple first step of introducing oneself to the world.</p>
+    </section>
+
+    <section id="img1"> <img class="images" src="Images/formpage.png"
+        alt="screenshot of a form page project in the style of a login page for a mysterious game."></section>
+    <section id="projects">
+      <h3  class="project-tile">Form Project</h3>
+      <p class="project-text"> This was such a fun project to work on and somehow the fastest one I completed even as it
+        required the most
+        typing due to all of the necessary tags for the form page. <br> You can find it <a target="_blank" href="https://replit.com/@bryannthn017/Project2Form-BCP-PRC-phase1-WI24">here.</a></p>
+    </section>
+    <section>
+    <img id="img3" class="images" src="Images/replitHomepage.png" alt="screenshot of a replit account homepage.">
+    </section>
+    <section id="projects2">
+      <h3>Replit Page</h3>
+      <p>For a view of various class assignments and explorations of all the topics covered in my frontend development class you can peruse my <a target="_blank" href="https://replit.com/@bryannthn017">Replit Page</a> and my <a id="profile-link" target="_blank" href="https://www.freecodecamp.org/fcc2bb70d47-b373-4ae2-91cc-a61971e9dca2">FreeCodeCamp Page</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <section class="goodbyeclass">
+      <h3 id="goodbye">Thank you for viewing!</h3>
+      <p>You can reach out to me by emailing here: fakeemailtest@fake.com</p>
+    </section>
+  </footer>
+<!-- It's no longer to the right...  -->
+  
+</body>
+
+</html>

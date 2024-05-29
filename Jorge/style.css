@@ -1,0 +1,70 @@
+#welcome-section{
+  height:100vh;
+}
+
+#welcome-section,#intro{
+  width:100vw;
+  margin:auto;
+  margin-top:200px;
+  text-align:center;
+}
+
+h1{
+  font-size:2em;
+}
+
+p{
+  font-family: cursive;
+}
+
+header{
+  position: fixed;
+  width:100vw;
+  top: 0;
+  left: 0;
+  color: white;
+  font-family:sans-serif;
+  padding: 0;
+}
+
+li>a:hover{
+  color:white;
+
+}
+
+#profile-link:hover{
+  color:#000000;
+  font-size:1.5em;
+}
+
+#navbar{
+  background-color: #a3a3a3;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin:0;
+  
+}
+
+#navbar > ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+ 
+  
+}
+
+#navbar > ul > li > a{
+   text-decoration: none;
+}
+
+img{
+  
+  width:350px;
+  height:400px;
+}
+
+#projects{
+  margin-top:50px;
+  display:flex;
+  justify-content: space-evenly;
+}

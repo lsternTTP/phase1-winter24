@@ -1,0 +1,95 @@
+html {
+  font-family: "Comfortaa", sans-serif;
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-image: url("img/pinkkeys.jpg");
+   text-wrap: nowrap;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px;
+}
+
+ul {
+  list-style-type: none;
+  text-wrap: nowrap;
+  color: #4877b7;
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin-top: 90px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #000080;
+}
+
+h3 {
+  
+  /* top: 100px;
+  left: 16px;
+  bottom: 0px; */
+  font-size: 18px;
+  padding: 15px;
+  width: 50%;
+  text-wrap: nowrap;
+}
+
+body {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  width: 100%;
+}
+
+main {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  grid-auto-rows: 300px;
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr;
+  align-items: center;
+  background-color:
+    #ece6ec;
+}
+
+#welcome-section {
+  display: grid;
+  grid-area: 1/1/1/4;
+  grid-auto-rows: 30px;
+  grid-template: 1fr/ 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+#projects {
+  display: grid;
+  grid-area: 2/1/2/4;
+  grid-auto-rows: 30px;
+}
+@media (max-height: 800px)
+ {
+  header>#navbar {
+  top: 0%;
+  left: 30%;
+  right: 0;
+  }
+}

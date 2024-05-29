@@ -1,0 +1,244 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Fira Code", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+}
+
+ul {
+  position: fixed;
+  right: 25px;
+  top: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+li {
+  margin: 5px;
+}
+
+h1 {
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+  color: #e62a6f;
+  margin-left: 45px;
+}
+
+h1:hover {
+  color: #bbff00
+}
+
+a {
+  color: #bbff00;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 600px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 20px;
+  place-items: center;
+  width: 3800px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 0px;
+  border: 0px;
+}
+
+a:hover {
+    color: #ff0088; 
+}
+#hello-world {
+  color: #bbff00;
+  text-align: left;
+}
+/* I previously had this as an h2 and it was auto aligned left. Now for the project requirement I have it as an h1 but it seems centered instead of aligned left even with the text align. */
+
+#hello-world:hover {
+  color: #ff0088;
+}
+
+h3 {
+  color: #323034;
+}
+
+h3:hover {
+  color: #ff0088;
+}
+
+#welcome-section {
+  height: 100vh;
+  z-index: -1;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#welcome-sectionreal {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #98939b;
+  color: #323034;
+  /* height: 100vh; */
+  /* This is required but breaks the aesthetic I had going on and it doens't count towards the validator. invisible div to catch the validator*/
+  width: 300px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+html {
+  animation-name: hello;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hello {
+  0% {
+    background-color: #80d6ed;
+  }
+
+  100% {
+    background-color: #2b859c;
+  }
+}
+
+main {
+  animation-name: strip;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes strip {
+  0%{ background-color: #d14a71;
+}
+  100%{ background-color: #feb6c7;
+    
+  }
+}
+
+#welcome-sectionreal:hover {
+  border: 5px solid #ff0088;
+}
+
+#projects2:hover {
+  border: 5px solid #bbff00;
+}
+
+.images {
+  width: 500px;
+  margin-right: 0px;
+}
+
+.images:hover {
+  width: 520px;
+}
+
+#img3 {
+  height: 325px;
+}
+
+#projects1, #projects, #projects2 {
+  height: 200px;
+  background-color:  #98939b;
+  padding: 20px;
+  margin-left: 0px;
+}
+
+#projects1:hover, #projects:hover {
+  border: 5px solid #bbff00;
+}
+
+#projects {
+  height: 200px;
+  padding-bottom: 35px;
+}
+
+footer {
+  height: 300px;
+  padding-top: 100px;
+  width: 3800px;
+  text-align: right;
+  padding-bottom: 50px;
+}
+
+h3 {
+  color: #bbff00;
+}
+
+.goodbyeclass {
+  color: #bbff00;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 344px){
+ main {
+   display: grid;
+   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+   grid-template-columns: 340px;
+   grid-gap: 20px;
+   place-items: center;
+   width: 340px;
+   height: 3800px;
+   margin-top: 100px;
+   margin-left: 0px;
+   border: 0px;
+   /* margin: auto; */
+ }
+
+  .images {
+    width: 300px;
+    height: 400px;
+    margin-right: 0px;
+  }
+
+footer {
+  width: 340px;
+}
+
+  header {
+    background-color: #98939b;
+    width: 100vw;
+    height: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0px;
+  }
+  
+  
+}

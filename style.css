@@ -1,0 +1,50 @@
+html {
+  background-image: url('img/colorful.jpg');
+  background-size: cover;
+  --bright-red: #db0403;
+}
+
+body {
+  font-family: "Cutive Mono", monospace;
+  margin: 20px auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header {
+  font-family: "Jaro", sans-serif;
+  font-weight: bold;
+  width: 30%;
+  align-self: center;
+  position: fixed;
+  color: var(--bright-red);
+}
+
+main {
+  grid-column: 2 / 3;
+}
+
+ul {
+  list-style: none;
+  line-height: 60px;
+  padding-left: 0px;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: var(--bright-red);
+  font-size: 33px;
+}

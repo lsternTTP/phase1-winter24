@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {font-family: "Fjalla One", sans-serif;
+   }
+
+ul  {
+  display:  flex;
+  list-style-type:  none;
+  justify-content:space-evenly;
+  padding:  0px;
+  font-weight: bold;
+}
+li  {
+  margin:  10px;
+}
+
+#welcome-section{
+  margin: 0;
+  padding:0;
+  height: 100vh;
+}
+#navbar  {
+  position: fixed;
+  top: 0px;
+}
+
+header{
+  font-size: 16px;
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav  {
+  width: 70%;
+}
+
+img  {
+  width:  250px;
+}
+a  {
+  width:  250px;
+}
+
+
+section  {
+  display:  grid;
+  grid-template:  2fr 1fr  /  350px  350px;
+  height: 800px;
+}
+
+#profile-link {
+  font-weight: bold;
+}

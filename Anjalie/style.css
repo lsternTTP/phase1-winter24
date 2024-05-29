@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+header{
+  width:100%;
+  position:fixed;
+  top:0;
+background-color:#d388a8 ;
+height:50px;
+}
+ul{
+  display:flex;
+ justify-content:flex-end ;
+  list-style-type: none;
+  margin:0; 
+}
+li{
+  padding:10px;
+}
+#my-pic{
+  width:50%;
+  height:50%;
+  border-radius:50%;
+}
+main{
+  height:100px;
+  margin-top: 100px;
+}
+#welcome-section{
+  height:100vh;
+}
+#h2{
+  text-align: left;
+  min-width:30px;
+  
+}
+img{
+  width:50%;
+}
+
+  
+
+
+  
+ 

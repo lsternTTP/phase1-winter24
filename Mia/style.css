@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+@media(min-width:400px){
+
+}
+body{
+  font-size:2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: lavenderblush;
+}
+#navbar{
+  height:20px;
+  flex-direction: row;
+  justify-content: flex-end;
+  top:0;
+  position: fixed;
+}
+#welcome-section{
+  height: 100vh;
+}
+  

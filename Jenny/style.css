@@ -1,0 +1,135 @@
+html {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+#navbar {
+
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #0a77eb;
+
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar ul a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#navbar ul a:hover {
+  background-color: rgb(253, 8, 163);
+}
+#welcome-section {
+  background-image: url(Img/beach.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+#projects {
+ /* width: 20%; */
+  
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-tile{
+  font-weight: bolder;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin:0;
+  padding:0;
+
+
+}
+.project-img {
+  /* display: inline-flex; */
+  /* border: solid 10px black; */
+  margin: 0px;
+  max-width: 50vh;
+  margin-top: 20px;
+  margin-left:10px;
+  align-items: center;
+  object-fit:cover;
+}
+a.project-img{
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: #bfc76b;
+}
+
+
+
+h1 {
+  font-size: 6rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.container {
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 2rem;
+  margin-top: 5rem;
+  align-items: center;
+  grid-gap: 15px;
+  margin-left:10px;
+  margin-bottom:0;
+}
+
+footer{
+  background-color:#0a77eb;
+  text-align:center;
+  margin-top:0;
+  
+}
+p{
+  color: #fff;
+}
+@media (max-width:635px) {
+  d  #navbar {
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+
+  #contact .container p {
+    margin-bottom: 1.5rem;
+  }
+}

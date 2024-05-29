@@ -1,0 +1,93 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+img {
+  width: 40vw;
+}
+
+#navbar {
+  background-color: #5a9dfa;
+   position: fixed ;
+  font-size: 24px;
+ top: 0;
+  width: 100%;
+}
+
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+   margin: 30px;
+  width: 100%;
+}
+
+.navlink{
+  color: ivory;
+}
+
+#projects {
+  background-color: #c2dbff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: ivory;
+  color: #5a9dfa;
+}
+
+#welcome-section p {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+h2 {
+  color: #5a9dfa;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.project-tile p {
+  color: #012961;
+  font-size: 20px;
+  padding: 15px;
+}
+.project-tile li {
+  color: blue;
+text-align: center;
+  width: 25%;
+}
+
+
+footer {
+  background-color: #5a9dfa;
+  color: ivory;
+  font-size: 20px;
+  padding: 70px;
+}
+
+@media screen and (max-width: 400px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
