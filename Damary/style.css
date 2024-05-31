@@ -1,0 +1,247 @@
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url('Images/Pastels_pexels-karolina-grabowska-4862892.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  scroll-behavior: smooth;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 25px;
+}
+
+/*  body {
+  background-color: lightblue;
+}
+
+@media only screen and (max-width: 600px) { 
+  body {
+    background-color: rgb(255, 192, 203);
+  }
+} */
+
+/* start navbar section */
+
+.nav {
+  display: flex; 
+ position: fixed;  
+  width: 100%;
+  padding: 1px;
+  z-index: 9999;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: blue;
+  border-radius: 25px;
+  width: 100%;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+ overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+   position: absolute; 
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0,0,255);
+  z-index: 1;
+  color: blue;
+}
+
+.dropdown-content a {
+  float: none;
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content { 
+  display: block;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  
+}
+
+[class*="nav"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* welcome section styling */
+
+.section1 {
+  top: 60px;  
+   padding-top: 65px;  
+  margin-top: 65px; 
+  }
+
+h1 {
+  font-family: 'Lugrasimo', cursive;
+  font-size: 25px;
+  color: blue;
+  text-align: center;
+  animation-name: change-color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+top: 0;
+}
+
+@keyframes change-color {
+  from {
+    color:pink;
+  }
+  to {
+    color: blue;
+  }
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+h4 {
+  color: blue;
+  text-align: center;
+}
+
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: blue;
+}
+
+  .welcome-section {
+     height: 100vh; 
+    width: 100%;
+  }
+
+
+
+/* project section styling */
+
+.project1 {
+  border-radius: 75%;
+}
+
+.project2 {
+  border-radius: 75%;
+}
+
+.project3 {
+  border-radius: 75%;
+}
+
+.project4 {
+  border-radius: 75%;
+}
+
+.project5 {
+  border-radius: 75%;
+}
+figcaption {
+  color: blue;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+/*  guest section stu=yling*/
+
+.guest_book {
+  color: blue;
+}
+
+
+
+/* contact section styling  */
+
+.contact-details {
+  color: blue;
+  font-weight: bold;
+
+}
+
+/* footer section styling  */
+
+footer,
+footer a {
+
+  border-radius: 25px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    left: 0;
+     bottom: 0;
+     width: 100%;
+
+}
+
