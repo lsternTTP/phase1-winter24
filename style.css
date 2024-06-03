@@ -1,49 +1,124 @@
 html {
-  background-image: url('img/colorful.jpg');
-  background-size: cover;
-  --bright-red: #db0403;
-}
-
-body {
-  font-family: "Cutive Mono", monospace;
-  margin: 20px auto;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-header {
-  font-weight: bold;
-  width: 30%;
-  align-self: center;
-  position: fixed;
-  color: var(--bright-red);
-}
-
-main {
-  grid-column: 2 / 3;
-}
-
-ul {
-  list-style: none;
-  line-height: 60px;
-  padding-left: 0px;
-}
-
-a {
-  font-size: 30px;
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: var(--bright-red);
-  font-size: 33px;
-}
+    height: 100%;
+    width: 100%;
+  }
+  
+  header, main, footer, .side {
+      padding: 20px;
+  }
+  
+  .side > p {
+      margin: 8px 0px;
+      font-size: .9em;
+  }
+  
+  .trail {
+      font-size: .8em;
+  }
+  
+  main ul {
+      list-style-type: none;
+      padding: 0px;
+  }
+  
+  .cols {
+      columns: 2;
+  }
+  
+  header {
+      color: #ffffff;
+      text-align: center;
+      background-image: url('img/banner.png');
+      grid-column: span 2;
+      background-position: center;
+      background-size: contain;
+  }
+  
+  body {
+      min-height: 130vh;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto 1fr auto;
+      font-family: "Lato", sans-serif;
+  }
+  
+  .top img {
+      max-width: 100%;
+  }
+  
+  
+  .top, footer {
+      grid-column: span 2;
+      padding: 10px;
+  }
+  
+  a {
+      color: #ab8d3f;
+  }
+  
+  a:hover {
+      color: darkblue;
+  }
+  
+  main li {
+      margin: 8px 0px;
+  }
+  
+  h1 {
+      font-weight: bold;
+  }
+  
+  h2 {
+      font-size: 1.2em;
+  }
+  
+  footer {
+      font-size: .8em;
+      background: #53514a;
+      color: #ffffff;
+      padding: 20px;
+  }
+  
+  footer > .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+  }
+  
+  .grid .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  footer img {
+      max-width: 250px;
+  }
+  
+  @media (max-width: 500px) {
+      body {
+          grid-template-columns: 1fr;
+      }
+  
+      .side, main {
+          padding: 0px 20px;
+      }
+  
+      header, footer {
+          grid-column: span 1;
+      }
+  
+      footer > .grid {
+          grid-template-columns: 1fr;
+      }
+  
+      .grid .grid {
+          display: block;
+      }
+  
+      br {
+          display: none;
+      }
+      .cols {
+          columns: 1;
+      }
+  }
